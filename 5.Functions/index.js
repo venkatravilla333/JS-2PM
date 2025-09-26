@@ -122,58 +122,115 @@
 // console.log(h)
 // console.log(i)
 // test()
-console.log(a)
-let a = 'sachin'
-console.log(a)
 
-console.log(b)
-var b = 40
-console.log(b)
+//hoisting
 
-console.log(c)
-var c = true
-console.log(c)
+// console.log(a)
+// let a = 'sachin'
+// console.log(a)
 
-console.log(d)
-var d
-console.log(d)
+// console.log(b)
+// var b = 40
+// console.log(b)
 
-console.log(e)
-var e = null
-console.log(e)
+// console.log(c)
+// var c = true
+// console.log(c)
 
-console.log(f)
-var f = {
-  name: 'kohli'
+// console.log(d)
+// var d
+// console.log(d)
+
+// console.log(e)
+// var e = null
+// console.log(e)
+
+// console.log(f)
+// var f = {
+//   name: 'kohli'
+// }
+// console.log(f)
+
+// console.log(g)
+// var g = [1, 2, 3]
+// console.log(g)
+
+// console.log(h)
+// var h = function named() {
+//   console.log('named')
+// }
+// h()
+// console.log(h)
+
+// console.log(i)
+// var i = function () {
+//   console.log('ananymous')
+// }
+// console.log(i)
+
+// console.log(j)
+// var j = () => {
+//   console.log('arrow')
+// }
+// console.log(j)
+
+// console.log(declare)
+// declare()
+// function declare() {
+//   console.log('declare')
+// }
+// console.log(declare)
+
+//var vs let vs const
+
+//scope
+
+//hoisting
+
+//redeclaration
+
+// var a = 10
+// let a = 10
+// const a = 10
+// console.log(a)
+
+// var a = 20
+// let a = 20
+// const a = 20
+// console.log(a)
+
+
+//re-assignment
+
+// var a = 10
+// let a = 10
+// const a = 10
+// console.log(a)
+// a = 20
+// console.log(a)
+
+//initialiazation
+
+// var a
+// let a
+// const a
+// console.log(a)
+// // a = 10
+// console.log(a)
+
+
+//closure
+
+function outerFun() {
+  var x = 100
+  var y = 200
+ return function innerFun() {
+    console.log(x)
+  }
 }
-console.log(f)
 
-console.log(g)
-var g = [1, 2, 3]
-console.log(g)
+var innerFun = outerFun()
+innerFun()
 
-console.log(h)
-var h = function named() {
-  console.log('named')
-}
-h()
-console.log(h)
 
-console.log(i)
-var i = function () {
-  console.log('ananymous')
-}
-console.log(i)
 
-console.log(j)
-var j = () => {
-  console.log('arrow')
-}
-console.log(j)
-
-console.log(declare)
-declare()
-function declare() {
-  console.log('declare')
-}
-console.log(declare)
