@@ -221,16 +221,117 @@
 
 //closure
 
-function outerFun() {
-  var x = 100
-  var y = 200
- return function innerFun() {
-    console.log(x)
-  }
-}
+// function outerFun() {
+//   var x = 100
+//   var y = 200
+//  return function innerFun() {
+//     console.log(x)
+//   }
+// }
 
-var innerFun = outerFun()
-innerFun()
+// var innerFun = outerFun()
+// innerFun()
+
+
+//IIFE
+
+// var a = 10
+
+// let b = 20
+
+//  (function test() {
+//   var a = 100
+//   console.log(a)
+// })()
+// console.log(a)
+
+
+//without curry
+
+// function test(a,b,c) {
+//   console.log(a + b + c)
+  
+// }
+
+// test(1, 2, 3)
+
+//with curry
+
+// function one(a) {
+//   return function two(b) {
+//     return function three(c) {
+//       console.log(a+b+c)
+//     }
+//   }
+// }
+// one(1)(2)(3)
+
+//without curry
+
+// function calDis(price, dis) {
+//   var disAmount = price * dis
+//   console.log(disAmount)
+// }
+
+// calDis(1000, .1)
+// calDis(1000, .2)
+// calDis(1000, .3)
+// calDis(1000, .4)
+// calDis(1000, .5)
+
+// with curry
+
+// function calPrice(price) {
+//   return function calDis(dis) {
+//     var disAmount = price * dis
+//     console.log(disAmount)
+//   }
+// }
+
+// var calDis = calPrice(1000)
+
+// calDis(.1)
+// calDis(.2)
+// calDis(.3)
+// calDis(.4)
+// calDis(.5)
+
+//first class function
+// var x = function () {
+//   return function hello() {
+    
+//   }
+// }
+// x(function test(){})
+
+//HOF
+
+// function test(cb) {
+//   console.log('hof')
+  
+//   return function hello() {
+//     console.log('hello')
+//   }
+//   cb()
+// }
+// test(function cb() {
+//   console.log('cb')
+// })
+
+//pure
+
+function pure(a, b, c) {
+  console.log(a + b + c)
+}
+pure(1, 2, 3)
+
+function impure(a, b, c) {
+  var d = Math.random()
+  console.log(a + b + c + d)
+}
+impure(1, 2, 3)
+
+
 
 
 
