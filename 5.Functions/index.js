@@ -235,6 +235,10 @@
 
 //IIFE
 
+// (function () {
+//   var c = 100
+//   console.log(c)
+// })()
 // var a = 10
 
 // let b = 20
@@ -320,17 +324,30 @@
 
 //pure
 
-function pure(a, b, c) {
-  console.log(a + b + c)
-}
-pure(1, 2, 3)
+// function pure(a, b, c) {
+//   console.log(a + b + c)
+// }
+// pure(1, 2, 3)
 
-function impure(a, b, c) {
-  var d = Math.random()
-  console.log(a + b + c + d)
-}
-impure(1, 2, 3)
+// function impure(a, b, c) {
+//   var d = Math.random()
+//   console.log(a + b + c + d)
+// }
+// impure(1, 2, 3)
 
+// Recursion function:
+
+
+// function factorial(n) {
+//   if (n <= 0) {
+//     return 1;
+//   } else {
+//     return n * factorial(n - 1);
+//   }
+// }
+
+// let result = factorial(5);
+// console.log(result);
 
 
 
