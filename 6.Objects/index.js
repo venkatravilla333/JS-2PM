@@ -104,3 +104,78 @@
 // delete person1.play
 // console.log(person1)
 
+
+// var person = {
+//   name: 'sachin',
+//   age: 40,
+//   city: 'mumbai',
+//   play: function () {
+//     console.log('play')
+//   }
+// }
+
+
+// console.log(person)
+
+//without using loop
+
+// console.log(person.name)
+// console.log(person.age)
+// console.log(person.city)
+// person.play()
+
+//with using loop
+
+// for (var key in person) {
+//   console.log(key, person[key])
+// }
+
+// var keys = Object.keys(person)
+// var values = Object.values(person)
+// var entries = Object.entries(person)
+// console.log(keys)
+// console.log(values)
+// console.log(entries)
+
+
+//copy
+
+//primitives  (deep copy )
+
+// var x = 10
+// console.log(x)
+// var y = x
+// y = 20
+// console.log(y)
+
+// import lodash from 'lodash'
+// var lodash = require('lodash')
+
+// var originalObj = {
+//   name: 'sachin',
+//   addess: {road: 101},
+//   play: function () {
+//     console.log('play')
+//   }
+// }
+
+// var copiedObj = originalObj //normal copy
+// var copiedObj = JSON.parse(JSON.stringify(originalObj)) //deep copy
+// var copiedObj = lodash.cloneDeep(originalObj) //deep copy
+// var copiedObj = Object.assign({}, originalObj)//shallow copy (ES-5)
+// var copiedObj = {...originalObj} //shallow copy (ES-6)
+
+// copiedObj.name = 'kohli'
+// copiedObj.addess.road = 201
+// console.log(originalObj)
+// console.log(copiedObj)
+
+
+//template string (ES-6)
+
+// var name = 'sachin'
+
+// var age = 40
+
+// console.log('Hi this is' + ' ' + name + ' ' + 'My age is' + ' ' + age) //es-5
+// console.log(`Hi this is ${name} my age is ${age}`) //es-6
