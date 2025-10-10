@@ -179,3 +179,119 @@
 
 // console.log('Hi this is' + ' ' + name + ' ' + 'My age is' + ' ' + age) //es-5
 // console.log(`Hi this is ${name} my age is ${age}`) //es-6
+
+
+// Math object
+
+// console.log(window.Math)
+
+// console.log(Math.min(2,5,9))
+// console.log(Math.max(2,5,9))
+// console.log(Math.floor(10.1))
+// console.log(Math.floor(10.9))
+// console.log(Math.ceil(10.1))
+// console.log(Math.ceil(10.9))
+// console.log(Math.round(10.5))
+// console.log(Math.round(10.4))
+// console.log(Math.random()*100)
+// console.log(Math.pow(2, 4))
+// console.log(Math.sqrt(25))
+
+// var current = new Date()
+// console.log(current)
+
+// console.log(current.getFullYear())
+// console.log(current.getDate())
+// console.log(current.getDay())
+// console.log(current.getHours())
+// console.log(current.getMinutes())
+
+// current.setFullYear(2040)
+
+// console.log(current)
+
+// var date1 = new Date(2050, 11, 10, 10, 10, 10)
+// console.log(date1)
+// console.log(date1.getFullYear())
+// console.log(date1.getHours())
+// console.log(date1.getMinutes())
+// console.log(date1.getSeconds())
+
+// date1.setFullYear(2047)
+
+// console.log(date1)
+
+// var date2 = new Date('2040 nov 10 10:10:10')
+// console.log(date2)
+
+// console.log(date2.getFullYear())
+// console.log(date2.getDate())
+// console.log(date2.getMonth())
+// console.log(date2.getHours())
+// console.log(date2.getMinutes())
+// console.log(date2.getSeconds())
+
+// date2.setFullYear(2020)
+// console.log(date2)
+
+
+
+var person = {
+  name: 'sachin',
+  age: 40,
+  city: 'mumbai',
+  address: { road: 101 },
+  properties: ['bat', 'cash']
+}
+//without destructuring
+
+// console.log(person.name)
+// console.log(person.age)
+// console.log(person.city)
+// console.log(person.address.road)
+// console.log(person.properties[0])
+// console.log(person.properties[1])
+
+//with destructuring (ES-6)
+
+// var { name, age, city, address: {road}, properties: [x, y] } = person
+
+// console.log(name)
+// console.log(age)
+// console.log(city)
+// console.log(road)
+// console.log(x)
+// console.log(y)
+
+
+var arr = [1, 2, 3, 4, 5, {bats: 100, cash: 100000}, ['sachin']]
+
+//without destructuring
+
+// console.log(arr[0])
+// console.log(arr[1])
+// console.log(arr[2])
+// console.log(arr[3])
+// console.log(arr[4])
+// console.log(arr[5].bats)
+// console.log(arr[5].cash)
+// console.log(arr[6][0])
+
+
+//with destructuring
+
+var [a, b, c, d, e, {bats, cash}, [name]] = arr
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(d)
+console.log(e)
+console.log(bats)
+console.log(cash)
+console.log(name)
+
+
+
+
+
+
