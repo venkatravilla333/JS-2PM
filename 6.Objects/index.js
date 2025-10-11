@@ -264,7 +264,7 @@ var person = {
 // console.log(y)
 
 
-var arr = [1, 2, 3, 4, 5, {bats: 100, cash: 100000}, ['sachin']]
+// var arr = [1, 2, 3, 4, 5, {bats: 100, cash: 100000}, ['sachin']]
 
 //without destructuring
 
@@ -280,15 +280,98 @@ var arr = [1, 2, 3, 4, 5, {bats: 100, cash: 100000}, ['sachin']]
 
 //with destructuring
 
-var [a, b, c, d, e, {bats, cash}, [name]] = arr
-console.log(a)
-console.log(b)
-console.log(c)
-console.log(d)
-console.log(e)
-console.log(bats)
-console.log(cash)
-console.log(name)
+// var [a, b, c, d, e, {bats, cash}, [name]] = arr
+// console.log(a)
+// console.log(b)
+// console.log(c)
+// console.log(d)
+// console.log(e)
+// console.log(bats)
+// console.log(cash)
+// console.log(name)
+
+
+//String object
+
+var msg = 'Hi you how are you Hi'
+
+// console.log(msg)
+//how to find length
+// console.log(msg.length)
+
+//how to remove empty spaces
+
+// console.log(msg.trimStart().length)
+// console.log(msg.trimEnd().length)
+// console.log(msg.trim().length)
+
+//how to copy
+
+// console.log(msg.slice())
+// console.log(msg.slice(0))
+// console.log(msg.slice(0, 5))
+// console.log(msg.slice(-3))
+
+// console.log(msg.substring())
+// console.log(msg.substring(0))
+// console.log(msg.substring(0, 5))
+// console.log(msg.substring(-3))
+
+//How to extract / copy a string character
+
+// console.log(msg.charAt(0))
+// console.log(msg.charCodeAt(0))
+
+//how to convert case
+
+// console.log(msg.toUpperCase())
+// console.log(msg.toLowerCase())
+
+// How to convert string into array
+
+// console.log(msg.split())
+
+//how to concat new string to end of existing string
+
+// console.log(msg.concat(' sachin'))
+
+//how to replace existing string
+
+// console.log(msg.replace('you', 'me'))
+// console.log(msg.replaceAll('you', 'me'))
+
+//padding or adding
+
+// var msg = 'hi'
+
+// console.log(msg.padStart(6, 34))
+// console.log(msg.padEnd(6, 3))
+
+
+//how to find specific string
+
+// console.log(msg.indexOf('Hi'))
+// console.log(msg.indexOf('bye'))
+// console.log(msg.lastIndexOf('Hi'))
+// console.log(msg.lastIndexOf('bye'))
+// console.log(msg.includes('Hi'))
+// console.log(msg.includes('bye'))
+// console.log(msg.startsWith('Hi'))
+// console.log(msg.startsWith('bye'))
+// console.log(msg.endsWith('Hi'))
+// console.log(msg.endsWith('bye'))
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
