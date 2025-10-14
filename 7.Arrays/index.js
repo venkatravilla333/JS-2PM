@@ -1,0 +1,112 @@
+
+
+var arr1 = [1, 2, 3, 4, 5]
+var arr2 =  arr1
+
+// console.log(arr)
+// console.log(arr[0])
+// console.log(arr[1])
+// console.log(arr[2])
+// console.log(arr[3])
+// console.log(arr[4])
+
+//how to add new values to array
+
+//staring
+// arr.unshift(0)
+
+//ending
+// arr.push(6)
+// console.log(arr)
+
+//any where
+// arr.splice(0, 0, 0)
+// arr.splice(arr.length, 0, 6)
+// arr.splice(3, 0, 6)
+// console.log(arr)
+
+//How to delete array items
+
+// arr.shift()
+// arr.pop()
+// arr.splice(arr.length-1, 1)
+// arr.splice(0, 3, 'hi')
+// console.log(arr)
+
+//How to delete all items from array
+
+// arr1.length = 0
+// arr1.splice(0, arr1.length)
+//  arr1 = []
+
+// console.log(arr1)
+// console.log(arr2)
+
+// var arr = [1, 2, 3, 4, 5, 2, 2]
+// var arr = [{course: 'react'}, {course: 'java'}, {course: 'react'}]
+
+// console.log(arr.indexOf(2))
+// console.log(arr.indexOf(20))
+// console.log(arr.lastIndexOf(2))
+// console.log(arr.lastIndexOf(20))
+// console.log(arr.includes(2))
+// console.log(arr.includes(20))
+
+// var res = arr.find((obj) => {
+//   return obj.course === 'html'
+// })
+// console.log(res)
+// var res = arr.findIndex((obj) => {
+//   return obj.course === 'react'
+// })
+// console.log(res)
+// var res = arr.findLastIndex((obj) => {
+//   return obj.course === 'html'
+// })
+// console.log(res)
+
+
+//How to loop arr
+
+// var arr = [1, 2, 3, 4, 5]
+
+//without loop
+
+// console.log(arr[0])
+// console.log(arr[1])
+// console.log(arr[2])
+// console.log(arr[3])
+// console.log(arr[4])
+
+// for (var value of arr) {
+//   console.log(value)
+// }
+
+
+// var res1 = arr.forEach((v, i) => {
+//   // console.log(v*100)
+//   return v*100
+// })
+// console.log(res1)
+
+// console.log(arr)
+
+// var res2 = arr.map((v) => {
+//   return v*100
+// })
+// console.log(res2)
+
+//How to merge two or more arrays into single array
+
+// var arr1 = [1, 2, 3, 4, 5]
+// var arr2 = [6, 7, 8, 9, 10]
+// var arr3 = [11, 12, 13, 14, 15]
+
+// console.log(arr1)
+// console.log(arr2)
+
+// var combineArr = arr1.concat(arr2) //ES-5
+// var combineArr = [...arr1,...arr3,...arr2] //ES-6
+// console.log(combineArr)
+
+
