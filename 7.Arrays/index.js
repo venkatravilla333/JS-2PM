@@ -110,3 +110,128 @@ var arr2 =  arr1
 // console.log(combineArr)
 
 
+//How to convert array into string
+
+// var arr = [1, 2, 3, 4, 5]
+// console.log(arr, typeof arr)
+
+// var str = arr.join('*')
+
+// console.log(str, typeof str)
+
+// var res = str.split()
+// console.log(res, typeof res)
+
+// var arr = [1, 2, 3, 4, 5]
+
+// var res = arr.reduce((cum, cur) => {
+//   return cum + cur
+  
+// }, 0)
+
+// console.log(res)
+
+
+// var arr = [1, 2, 3, 4, 5, 3, 6, 3]
+// console.log(arr)
+
+// console.log(new Set(arr))
+
+// var uniqueArr = [...new Set(arr)]
+// console.log(uniqueArr)
+
+// var uniqueArr = []
+
+// function removeDuplicates(arr) {
+//   for (var value of arr) {
+//     console.log(value)
+//     if (uniqueArr.indexOf(value) === -1) {
+//       uniqueArr.push(value)
+//     }
+//   }
+// }
+
+// removeDuplicates(arr)
+
+// console.log(uniqueArr)
+
+
+//How to flatten array
+
+// var arr = [1, 2, 3, [10, 20], [100, 200, [1000, 2000]]]
+
+// var flattenArr = arr.flat(Infinity)
+// console.log(flattenArr)
+// var flattenArr = []
+
+// function flattenFun(arr) {
+//   for (var value of arr) {
+//     console.log(value)
+//     if (Array.isArray(value)) {
+//       flattenFun(value)
+//     } else {
+//       flattenArr.push(value)
+//     }
+//   }
+// }
+
+// flattenFun(arr)
+
+// console.log(flattenArr)
+
+//Sorting
+
+//primtives
+
+// var arr = ['sachin', 'dhoni', 'kohi', 'rahul']
+// var arr = [8, 3, 5, 1, 2]
+var arr = [8, 3, 5, 1, 12]
+// var arr = [{ course: 'node' }, { course: 'react' }, { course: 'css' }]
+// console.log(arr)
+
+// var ASO = arr.sort()
+
+// // console.log(arr)
+// console.log(ASO)
+// var DSO = arr.reverse()
+// console.log(DSO)
+
+// var ASO = arr.sort((a,b) => {
+//   if (a > b) {
+//     return -1
+//   } else {
+//     return 1
+//   }
+// })
+
+// console.log(ASO)
+
+// var ASO = arr.sort((obj1, obj2) => {
+//   if (obj1.course > obj2.course) {
+//     return -1
+//   } else {
+//     return 1
+//   }
+// })
+// console.log(ASO)
+
+// for (var i = 0; i < arr.length; i++){
+//   for (var j = i + 1; j < arr.length; j++){
+//     if (arr[i] < arr[j]) {
+//       var temp = arr[i]
+//       arr[i] = arr[j]
+//       arr[j] = temp
+//     }
+//   }
+// }
+
+// console.log(arr)
+
+
+
+
+
+
+
+
+
