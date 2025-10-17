@@ -227,6 +227,36 @@ var arr = [8, 3, 5, 1, 12]
 
 // console.log(arr)
 
+// var arr = [1, 2, 3, 4, 5]
+// var arr = [{name: 'sachin', age: 40}, {name: 'kohli', age: 35}, {name: 'gill', age: 22}]
+// console.log(arr)
+
+// var filtredArr = arr.filter((person) => {
+//   return person.age < 30
+// })
+
+// console.log(filtredArr)
+
+// function test() {
+//   console.log(arguments, Array.isArray(arguments))
+//   var res = Array.from(arguments)
+//   console.log(res, Array.isArray(res))
+// }
+
+// test(1,2,3,4,5)
+
+var originalArr = ['sachin', { road: 101 }, () => { }]
+
+// var copiedArr = originalArr //normal copy
+// var copiedArr = JSON.parse(JSON.stringify(originalArr)) //deep copy
+// var copiedArr = Object.assign([], originalArr) //shallow copy
+// var copiedArr = [...originalArr] //shallow copy
+
+copiedArr[0] = 'kohli'
+copiedArr[1].road = 201
+console.log(originalArr)
+console.log(copiedArr)
+
 
 
 
