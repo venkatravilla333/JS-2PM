@@ -69,29 +69,158 @@
 // })
 
 
+// function fetchData(num) {
+//  return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       // var data = 'sachin'
+//       var data = num*num
+//       res(data)
+//     }, 4000)
+//   })
+// }
 
-function fetchData(num) {
- return new Promise((res, rej) => {
-    setTimeout(() => {
-      // var data = 'sachin'
-      var data = num*num
-      res(data)
-    }, 4000)
+
+
+// async function displayData() {
+//   var data1 =  await fetchData(2)
+//   console.log(data1)
+//   var data2 =  await fetchData(data1)
+//   console.log(data2)
+//   var data3 =  await fetchData(data2)
+//   console.log(data3)
+//   var data4 =  await fetchData(data3)
+//   console.log(data4)
+ 
+// }
+
+// displayData()
+
+
+// var pr1 = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     res('PR-1')
+//   }, 2000)
+// })
+// var pr2 = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     res('PR-2')
+//   }, 4000)
+// })
+// var pr3 = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     rej('PR-3')
+//   }, 3000)
+// })
+
+// Promise.all([pr1, pr2, pr3]).then((res)=>{console.log(res)})
+// Promise.allSettled([pr1, pr2, pr3]).then((res)=>{console.log(res)})
+// Promise.race([pr1, pr2, pr3]).then((res)=>{console.log(res)})
+// Promise.any([pr1, pr2, pr3]).then((res)=>{console.log(res)})
+
+var getdataBtn = document.getElementById('getdata')
+
+var parent = document.getElementById('parent')
+
+function getdataBtnFun() {
+  fetch('https://jsonplaceholder.typicode.com/posts')
+    .then((res) => {
+     return res.json()
+    }).then((data) => {
+      data.forEach((obj) => {
+      var para = document.createElement('p')
+        console.log(para)
+        para.textContent = obj.title
+        parent.appendChild(para)
+     })
+    console.log(data)
+    }).catch((err) => {
+    console.log(err)
   })
 }
 
+getdataBtn.addEventListener('click', getdataBtnFun)
 
+//send data
 
-async function displayData() {
-  var data1 =  await fetchData(2)
-  console.log(data1)
-  var data2 =  await fetchData(data1)
-  console.log(data2)
-  var data3 =  await fetchData(data2)
-  console.log(data3)
-  var data4 =  await fetchData(data3)
-  console.log(data4)
- 
+var newObject = {
+  userId: 200,
+  title: 'my title',
+  body: 'my body'
 }
 
-displayData()
+var senddataBtn = document.getElementById('senddata')
+
+function senddataBtnFun() {
+  fetch('https://jsonplaceholder.typicode.com/posts', {
+    method: 'POST',
+    headers: {
+      'Content-type': 'Application/json'
+    },
+    body: JSON.stringify(newObject)
+  }).then((res) => {
+    return res.json()
+  }).then((data)=>{
+    console.log(data)
+  }).catch((err) => {
+    console.log(err)
+  })
+}
+
+senddataBtn.addEventListener('click', senddataBtnFun)
+
+//update data
+
+var updateObject = {
+  userId: 300,
+  title: 'hello ap',
+  body: 'this is bosy'
+}
+
+var updatedataBtn = document.getElementById('updatedata')
+
+function updatedataBtnFun() {
+  fetch('https://jsonplaceholder.typicode.com/posts/10', {
+    method: 'PUT',
+    headers: {
+      'Content-type': 'Application/json'
+    },
+    body: JSON.stringify(updateObject)
+  }).then((res) => {
+    console.log(res)
+    return res.json()
+  }).then((data)=>{
+    console.log(data)
+  }).catch((err) => {
+    console.log(err)
+  })
+}
+
+updatedataBtn.addEventListener('click', updatedataBtnFun)
+
+//delete data
+
+
+var deletedataBtn = document.getElementById('deletedata')
+
+function deletedataBtnFun() {
+  fetch('https://jsonplaceholder.typicode.com/posts/20', {
+    method: 'DELETE',
+  }).then((res) => {
+    console.log(res)
+    return res.json()
+  }).then((data)=>{
+    console.log(data)
+  }).catch((err) => {
+    console.log(err)
+  })
+}
+
+deletedataBtn.addEventListener('click', deletedataBtnFun)
+
+
+
+
+
+
+
+
